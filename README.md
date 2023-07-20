@@ -1,1 +1,2 @@
-# Elodidie.github.io
+# shop
+A simple shop template using html , css ,   javascript with searchbar and filter
