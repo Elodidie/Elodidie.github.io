@@ -11,84 +11,33 @@
         
     </head>
     
-    <body>
-        
-<div class="container">
-<body>
-    <div style="display: flex; align-items: center; background-color: #FFAE62; padding: 20px;">
-        <img src="./img/Image4.png" alt="Your Image" style="width: 180px; height: 180px; margin-right: 20px;">
-        <h1 style="margin: 0; color:blue; font-size: 60px;">BUY YOUR SCHNITZEL MAGNET NOW.</h1>
-        
+<main class="container">
+ 
+  <!-- Left Column / Headphones Image -->
+  <div class="left-column">
+    <img data-image="black" src="logo1.jpg" width="600" height="500" alt="">
+ 
+  </div>
+ 
+ 
+  <!-- Right Column -->
+  <div class="right-column">
+ 
+    <!-- Product Description -->
+    <div class="product-description">
+      <h1>Schnitzel Magnet</h1>
+      <p>A beautiful textured Schnitzel Magnet with bright colors. A must-have on your fridge!</p>
     </div>
-</body>
-<div class="button">
-<button id="btn001" type="button">Sign Up!</button>
-<button id="btn002" type="button" class="fas fa-shopping-cart fa-2x"></button>
-</div>
-            
-            <div class="content">
-    
-                <h2>Products</h2>
-            </div>
-            
-            <!-------- products --------------->
-            <section class="products">
-                
-                <div class="pcard">                    
-                    <img src="./img/logo2.jpg" class="primg0" alt="unavailable" >
-                    <div class="product-info">
-                        <h1>Schnitzel Magnet</h1>
-                      
-                        
-                        <p class="price" id="price0"><script>document.write(5);</script>$</p>
-                        <p>Beautiful textured schnitzel magnet with bright colors.</p>
-                        <!-----start rating----->                        
-                        <span class="rating" data-default-rating="4.5"></span>                         
-                        <!-----end rating----->
-                    </div>
-                    <p> <form class = "pform">
-                        <label for="quantity">Enter Quantity:</label><br/>
-                        <input type="number" id="quantity0" name="quantity" min="1" max="5" onchange = "instantPrice0()">
-                        <script>
-                        function instantPrice0 () {
-                            var quantvar0 = document.getElementById("quantity0");                            
-                            var quantmp0 = quantvar0.value;                             
-							var newPrice0 = quantmp0 * (prodb[0].price);                            
-                            var priceout0 = document.getElementById ("price0");
-                            priceout0.innerHTML = newPrice0 + "$";
-                            
-                        }
-                            </script>
-                        <input class="pbutton" type="submit" value="Add to Cart">
-                    </form></p> <br/> <br/> 
-                </div>
-                <hr>
-                
-     
-                    <!------- End Products-------->
-                    
-                    
-                    
-                    
-                    
-                    <div class="footer">
-                    <script src="./src/SimpleStarRating.js"></script>
-                    
-                    
-                    
-                    <script>
-                    var ratings = document.getElementsByClassName('rating');
-                    
-                    for (var i = 0; i < ratings.length; i++) {
-                    var r = new SimpleStarRating(ratings[i]);
-                    
-                    ratings[i].addEventListener('rate', function(e) {
-                    console.log('Rating: ' + e.detail);
-                    });
-                    }
-                    </script>
-                    </div>
-                    </div>
-                    </body>
-                    </html>
+ 
+  
+
+
+ 
+    <!-- Product Pricing -->
+    <div class="product-price">
+      <span>5$</span>
+      <a href="#" class="cart-btn">Add to cart</a>
+    </div>
+  </div>
+</main>
                                         
